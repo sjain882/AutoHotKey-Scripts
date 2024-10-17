@@ -48,3 +48,5 @@ Currently broken due to AHK monitor indexes changing on each reboot / having no 
 # External
 
 [QuickSwitch](https://github.com/gepruts/QuickSwitch) - Uses opened file manager folders in File dialogs
+
+[Change Laptop and External Monitor Brightness based on cursor position](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=108867&hilit=monitor) - Great overview & comparison of all the various APIs one can use for this
