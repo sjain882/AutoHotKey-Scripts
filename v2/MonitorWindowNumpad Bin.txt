@@ -1,0 +1,23 @@
+
+	
+	; #Requires AutoHotkey v2.0
+	; hwnd := ControlGetHWND(WinGetID("A"))
+
+
+
+
+
+	
+	; winStyle := WinGetStyle(activeWindow)
+	
+	; if (winStyle & 0x40000)
+	; {
+	; 	WinMaximize(activeWindow)
+	; }	
+
+
+
+
+
+
+	; MsgBox "The active window is '" WinGetTitle("A") "'."
