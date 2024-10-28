@@ -39,9 +39,21 @@ Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.
 
 ### `MonitorWindowNumpad - Home Dell MSI Dell AOC.ahk`
 
+UNUSED - BROKEN
+
 Use `WIN + Num 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
 
 Currently broken due to AHK monitor indexes changing on each reboot / having no correlation to what's displayed in Windows Settings. More info [here](https://discord.com/channels/115993023636176902/1296424288265572405) on Discord.
+
+### `Multi Monitor Numpad.ahk`
+
+THIS IS THE ONE I PRIMARILY USE
+
+Use `WIN + Numpad 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
+
+Works consistently even when monitor indexes are messed up, by looping through working areas to find the right monitor.
+
+Full credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to the above script.
 
 ***
 
