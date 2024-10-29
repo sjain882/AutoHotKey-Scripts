@@ -37,7 +37,7 @@ Many scripts could be combined into one - needs cleanup.
 
 - You can also use `Right Arrow + Numpad 1/2/3/5` - really good for one handed use. The right arrow input is still sent to window, so not ideal, but its an alternative.
 
-- Best method: you can just scroll your mouse while hovering anywhere on taskbar to move window between monitors! It loops too. Doesn't require any hands on the keyboard - super good for lazy users!
+- Best method: you can just scroll your mouse while hovering anywhere on taskbar to move window between monitors! It loops too. Doesn't require any hands on the keyboard - super good for lazy users! Scrolling only works on primary monitor taskbar, however.
 
 - Works consistently even when monitor indexes are messed up, by looping through working areas to find the right monitor.
 
@@ -90,6 +90,8 @@ Many scripts could be combined into one - needs cleanup.
 ### `Multi Monitor Numpad.ahk`
 
 - Use `WIN + Numpad 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
+
+- You can also use `Right Arrow + Numpad 1/2/3/5` - really good for one handed use. The right arrow input is still sent to window, so not ideal, but its an alternative.
 
 - Works consistently even when monitor indexes are messed up, by looping through working areas to find the right monitor.
 
