@@ -22,7 +22,6 @@ Many scripts could be combined into one - needs cleanup.
 - Useful for using CapsLock sneak & Shift duck, instead of Shift sneak and Ctrl duck, as those keys are closer to WASD - more ergonomic.
 
 
-
 ***
 
 # AHK v2
@@ -61,6 +60,12 @@ Many scripts could be combined into one - needs cleanup.
 
 - Toggle windows always on top with CTRL + Space, and auto click "Yes" on error classes.
 
+### `Hide Window from Taskbar.ahk`
+
+- Enter a window title then hit OK to keep window visible, but hide from taskbar. Frees up valuable space for windows permanently visible on another monitor etc.
+
+- Best used with `Multi Monitor Numpad - With Taskbar Scroll.ahk`
+
 ### `ThrowWindow.ahk`
 
 - Throw any window by dragging it with the mousebutton and releasing it. The window will float around the monitor bouncing of the screen edges.
@@ -89,13 +94,7 @@ Many scripts could be combined into one - needs cleanup.
 
 ### `Multi Monitor Numpad.ahk`
 
-- Use `WIN + Numpad 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
-
-- You can also use `Right Arrow + Numpad 1/2/3/5` - really good for one handed use. The right arrow input is still sent to window, so not ideal, but its an alternative.
-
-- Works consistently even when monitor indexes are messed up, by looping through working areas to find the right monitor.
-
-- Full credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to archived script.
+- `Multi Monitor Numpad - With Taskbar Scroll.ahk` without taskbar scroll
 
 ### `MonitorWindowNumpad - Home Dell MSI Dell AOC.ahk` (unused)
 
