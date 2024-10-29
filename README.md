@@ -30,6 +30,10 @@ Many scripts could be combined into one - needs cleanup.
 
 - Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=126656&hilit=monitor)
 
+### `Move GHelper.ahk`
+
+- Every second, check if G-Helper window exists. If so, move it to the secondary monitor, out the way.
+
 ### `Multi Monitor Numpad - With Taskbar Scroll.ahk`
 
 - Use `WIN + Numpad 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
