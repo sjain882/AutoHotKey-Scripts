@@ -31,13 +31,19 @@ Many scripts could be combined into one - needs cleanup.
 
 - Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=126656&hilit=monitor)
 
-### `Multi Monitor Numpad.ahk`
+### `Multi Monitor Numpad - With Taskbar Scroll.ahk`
 
 - Use `WIN + Numpad 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
 
+- You can also use `Right Arrow + Numpad 1/2/3/5` - really good for one handed use. The right arrow input is still sent to window, so not ideal, but its an alternative.
+
+- Best method: you can just scroll your mouse while hovering anywhere on taskbar to move window between monitors! It loops too. Doesn't require any hands on the keyboard - super good for lazy users!
+
 - Works consistently even when monitor indexes are messed up, by looping through working areas to find the right monitor.
 
-- Full credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to archived script.
+- Credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to archived script.
+
+- Taskbar scrolling added by me, based on https://stackoverflow.com/a/77044270
 
 
 ***
@@ -81,6 +87,14 @@ Many scripts could be combined into one - needs cleanup.
 
 # AHK v2
 
+### `Multi Monitor Numpad.ahk`
+
+- Use `WIN + Numpad 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
+
+- Works consistently even when monitor indexes are messed up, by looping through working areas to find the right monitor.
+
+- Full credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to archived script.
+
 ### `MonitorWindowNumpad - Home Dell MSI Dell AOC.ahk` (unused)
 
 - Use `WIN + Num 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
@@ -101,4 +115,4 @@ Many scripts could be combined into one - needs cleanup.
 
 [Awesome-AutoHotKey](https://github.com/ahkscript/awesome-AutoHotkey)
 
-[Scroll on Taskbar](https://www.autohotkey.com/boards/viewtopic.php?t=68204)
+Scroll on Taskbar - [AHK v1](https://www.autohotkey.com/boards/viewtopic.php?t=68204), [AHK v2](https://stackoverflow.com/a/77044270)
