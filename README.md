@@ -55,6 +55,22 @@ Many scripts could be combined into one - needs cleanup.
 
 - Toggle windows always on top with CTRL + Space, and auto click "Yes" on error classes.
 
+### `ThrowWindow.ahk`
+
+- Throw any window by dragging it with the mousebutton and releasing it. The window will float around the monitor bouncing of the screen edges.
+
+- Authors: foom, ManaUser, Laszlo, infogulch et.al.
+
+- Found here: https://github.com/ahkscript/awesome-AutoHotkey/issues/128
+
+- Unfortunately, this seems to break WIN+V Clipboard History on Windows 10... clicking on an entry from your clipboard history just pastes v, rather than the actual content...
+
+- Otherwise, works pretty well, even on multiple monitors.
+
+- Fixed link: https://www.autohotkey.com/board/topic/18184-gui-float-question-expertwise-person-help-needed/?p=270491
+
+- Archive: https://archive.ph/wip/3d0am
+
 ### `WindowMonitorSwitcher.ahk` (unused)
 
 - `CTRL + Monitor Index on numpad` to send currently active window to that monitor index.
@@ -80,3 +96,8 @@ Many scripts could be combined into one - needs cleanup.
 [QuickSwitch](https://github.com/gepruts/QuickSwitch) - Uses opened file manager folders in File dialogs
 
 [Change Laptop and External Monitor Brightness based on cursor position](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=108867&hilit=monitor) - Great overview & comparison of all the various APIs one can use for this
+
+[TaskbarInterface](https://autohotkey.com/boards/viewtopic.php?f=6&t=35348) - leverage taskbar windows features. [Source code](https://github.com/HelgeffegleH/taskbarInterface)
+
+[Awesome-AutoHotKey](https://github.com/ahkscript/awesome-AutoHotkey)
+
