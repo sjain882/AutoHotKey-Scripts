@@ -101,3 +101,4 @@ Many scripts could be combined into one - needs cleanup.
 
 [Awesome-AutoHotKey](https://github.com/ahkscript/awesome-AutoHotkey)
 
+[Scroll on Taskbar](https://www.autohotkey.com/boards/viewtopic.php?t=68204)
