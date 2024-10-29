@@ -66,6 +66,8 @@ Many scripts could be combined into one - needs cleanup.
 
 - Best used with `Multi Monitor Numpad - With Taskbar Scroll.ahk`
 
+- [Source](https://www.autohotkey.com/board/topic/5112-remove-window-form-taskbar/?p=31692) ([archive](https://archive.ph/wip/xRBZC))
+
 ### `ThrowWindow.ahk`
 
 - Throw any window by dragging it with the mousebutton and releasing it. The window will float around the monitor bouncing of the screen edges.
