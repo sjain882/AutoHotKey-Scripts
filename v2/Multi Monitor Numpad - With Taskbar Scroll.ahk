@@ -76,7 +76,7 @@ if GetKeyState("Right")
 counter := 0
 arrLength := Monitors.Length
 
-  *WheelUp::
+  *WheelDown::
   {
     global counter += 1
 
@@ -89,7 +89,7 @@ arrLength := Monitors.Length
   }
 
 
-  *WheelDown::
+  *WheelUp::
   {
     global counter -= 1
 
