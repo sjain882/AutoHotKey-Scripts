@@ -25,7 +25,7 @@ Many scripts could be combined into one - needs cleanup.
 
 ### `UnCapsLock for CS.ahk`
 
-- Prevents use of CapsLock as a Sneak/Walk button from interfering with text chat but automatically turning off CapsLock when key is released, in CS 1.6 / CSS / CS2.
+- Prevents use of CapsLock as a Sneak/Walk button from interfering with text chat by automatically turning off CapsLock when key is released, in CS 1.6 / CSS / CS2.
 
 - Useful for using CapsLock sneak & Shift duck, instead of Shift sneak and Ctrl duck, as those keys are closer to WASD - more ergonomic.
 
