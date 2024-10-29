@@ -23,7 +23,13 @@ Overrides CTRL + W to minimise window, not close it.
 
 Assorted spammer scripts for Sven-Coop.
 
-### `WindowMonitorSwitcher.ahk`
+### `UnCapsLock for CS.ahk`
+
+Prevents use of CapsLock as a Sneak/Walk button from interfering with text chat but automatically turning off CapsLock when key is released, in CS 1.6 / CSS / CS2.
+
+Useful for using CapsLock sneak & Shift duck, instead of Shift sneak and Ctrl duck, as those keys are closer to WASD - more ergonomic.
+
+### `WindowMonitorSwitcher.ahk` (unused)
 
 `CTRL + Monitor Index on numpad` to send currently active window to that monitor index.
 
@@ -37,23 +43,19 @@ I can't use this due to my annoying jumbled up monitor indexes in Windows (and a
 
 Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=126656&hilit=monitor)
 
-### `MonitorWindowNumpad - Home Dell MSI Dell AOC.ahk`
-
-UNUSED - BROKEN
-
-Use `WIN + Num 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
-
-Currently broken due to AHK monitor indexes changing on each reboot / having no correlation to what's displayed in Windows Settings. More info [here](https://discord.com/channels/115993023636176902/1296424288265572405) on Discord.
-
-### `Multi Monitor Numpad.ahk`
-
-THIS IS THE ONE I PRIMARILY USE
+### `Multi Monitor Numpad.ahk` (in active use)
 
 Use `WIN + Numpad 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
 
 Works consistently even when monitor indexes are messed up, by looping through working areas to find the right monitor.
 
-Full credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to the above script.
+Full credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to the below script.
+
+### `MonitorWindowNumpad - Home Dell MSI Dell AOC.ahk` (unused)
+
+Use `WIN + Num 1/2/3/5` (Arrow keys / WASD formation) to send currently active window to relevant monitor (which are arranged just like WASD irl).
+
+Currently broken due to AHK monitor indexes changing on each reboot / having no correlation to what's displayed in Windows Settings. More info [here](https://discord.com/channels/115993023636176902/1296424288265572405) on Discord.
 
 ***
 
