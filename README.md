@@ -127,3 +127,7 @@ Many scripts could be combined into one - needs cleanup.
 [Awesome-AutoHotKey](https://github.com/ahkscript/awesome-AutoHotkey)
 
 Scroll on Taskbar - [AHK v1](https://www.autohotkey.com/boards/viewtopic.php?t=68204), [AHK v2](https://stackoverflow.com/a/77044270)
+
+[HTPC-UI-UX](https://github.com/Nerwyn/HTPC-UI-UX) - useful examples of HTPC scripts, e.g, remapping volume keys to POST requests for amplifiers
+
+[drag-scroll--autohotkey](https://github.com/Mikhail22/drag-scroll--autohotkey) - Drag anywhere to scroll, useful for HTPC air mouse remotes
