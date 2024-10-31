@@ -26,6 +26,10 @@ Many scripts could be combined into one - needs cleanup.
 
 # AHK v2
 
+### `G7V Pro HTPC.ahk`
+
+- My own personal keybind setup for the G7V Pro (non-Bluetooth / not G7BTS) air mouse remote. Used with my HTPC.
+
 ### `KDE Resizing.ahk`
 
 - Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=126656&hilit=monitor)
