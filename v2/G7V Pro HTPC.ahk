@@ -4,6 +4,46 @@
 ; Use with:
 ; https://github.com/Mikhail22/drag-scroll--autohotkey
 
+; Script is unfinished, many things don't work properly. Needs updating.
+
+; Add mouse deadzone to replicate smooth behaviour of Rii i25 air mouse remote.
+; This removes the jitter at low speeds, meaning you can make clean A to B movements just like the i25.
+; https://www.autohotkey.com/boards/viewtopic.php?style=19&t=126823
+
+Persistent
+Global D := 4 ; deadzoneSize
+Hook := WindowsHook(WH_MOUSE_LL := 14, LowLevelMouseProc)
+
+LowLevelMouseProc(nCode, wParam, lParam)
+{
+	static WM_MOUSEMOVE := 0x200, WM_COMMAND := 0x111, x1 := 0, y1 := 0
+	if wParam = WM_MOUSEMOVE
+	{
+		x2:=NumGet(lParam+0,0,"Int"), y2:=NumGet(lParam+0,4,"Int")
+		DllCall("SetCursorPos", "int", x1:=x1+((Abs(xd:=x2-x1)<D)?0:xd), "int", y1:=y1+((Abs(yd:=y2-y1)<D)?0:yd))
+		Return True
+	}
+	Return DllCall('CallNextHookEx', 'Ptr', 0, 'Int', nCode, 'UInt', wParam, 'Ptr', lParam, 'Ptr')
+}
+
+class WindowsHook
+{
+	__New(type, callback, isGlobal := true)
+	{
+		this.pCallback := CallbackCreate(callback, 'Fast', 3)
+		this.hHook := DllCall('SetWindowsHookEx', 'Int', type, 'Ptr', this.pCallback,
+		'Ptr', !isGlobal ? 0 : DllCall('GetModuleHandle', 'UInt', 0, 'Ptr'),
+		'UInt', isGlobal ? 0 : DllCall('GetCurrentThreadId'), 'Ptr')
+	}
+	__Delete()
+	{
+		DllCall('UnhookWindowsHookEx', 'Ptr', this.hHook)
+		CallbackFree(this.pCallback)
+	}
+}
+
+; --------------- END ---------------
+
 
 ; |<< & >>|
 ; Speed control
@@ -29,7 +69,9 @@ If WinActive("ahk_exe Screenbox.exe")
 
 
 ; DPAD PageUp / PageDown
-; Cycle between open windows
+; Cycle between open windows in last used order
+; PgUp = Next app
+; PgDn = Previous app
 ; https://old.reddit.com/r/AutoHotkey/comments/zxz252/struggling_with_winget_winactivate_array_cycling/
 PgUp::
 {
@@ -141,6 +183,7 @@ Browser_Back::Click "Right"
 ;   f               c                   ,                .
 ;
 ; Note: set windows magnifier to centre on mouse cursor, and use air mouse to move it
+; Video related binds are for Screenbox media player
 1::#1
 2::#3
 3::#4
@@ -193,16 +236,16 @@ User32Module := DllCall("GetModuleHandle", "Str", "user32", "Ptr")
 global SPIProc
 SPIProc := DllCall("GetProcAddress", "Ptr", User32Module, "AStr", "SystemParametersInfoW", "Ptr")
 
-; My default air mouse speed is /10 on the HTPC
+; My default air mouse speed is 7/11 on the HTPC
 normalMouseSpeed()
 {
-    DllCall(SPIProc, "Int", 0x71, "Int", 0, "UInt", 6, "Int", 0)
+    DllCall(SPIProc, "Int", 0x71, "Int", 0, "UInt", 7, "Int", 0)
 }
 
-; Slow mouse speed is 2/10
+; Slow mouse speed is 2/11
 slowMouseSpeed()
 {
-    DllCall(SPIProc, "Int", 0x71, "Int", 0, "UInt", 3, "Int", 0)
+    DllCall(SPIProc, "Int", 0x71, "Int", 0, "UInt", 2, "Int", 0)
 }
 
 ; Main logic
