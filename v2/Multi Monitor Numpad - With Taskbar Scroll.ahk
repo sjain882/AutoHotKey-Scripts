@@ -1,4 +1,6 @@
 #Requires AutoHotkey v2
+#SingleInstance Force
+Persistent
 
 ; First, input your monitor working areas into the below array.
 
@@ -53,14 +55,12 @@ MoveWindowToMonitor(index) {
 
 ; ----- Right + Numpad -----
 
-if GetKeyState("Right")
-{
-  Numpad1::MoveWindowToMonitor(1)
-  Numpad2::MoveWindowToMonitor(2)
-  Numpad3::MoveWindowToMonitor(3)
-  Numpad5::MoveWindowToMonitor(4)
-}
-  
+Right & Numpad1:: MoveWindowToMonitor(1)
+Right & Numpad2:: MoveWindowToMonitor(2)
+Right & Numpad3:: MoveWindowToMonitor(3)
+Right & Numpad5:: MoveWindowToMonitor(4)
+
+
 ; ----- WIN + Numpad -----
 
 #Numpad1::MoveWindowToMonitor(1)
