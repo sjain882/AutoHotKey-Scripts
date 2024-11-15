@@ -55,10 +55,53 @@ MoveWindowToMonitor(index) {
 
 ; ----- Right + Numpad -----
 
-Right & Numpad1:: MoveWindowToMonitor(1)
-Right & Numpad2:: MoveWindowToMonitor(2)
-Right & Numpad3:: MoveWindowToMonitor(3)
-Right & Numpad5:: MoveWindowToMonitor(4)
+Numpad1::
+{
+  if GetKeyState("Right")
+  {
+      MoveWindowToMonitor(1)
+  }
+  else
+  {
+    SendText "1"
+  }
+}
+
+Numpad2::
+{
+  if GetKeyState("Right")
+  {
+      MoveWindowToMonitor(2)
+  }
+  else
+  {
+    SendText "2"
+  }
+}
+
+Numpad3::
+{
+  if GetKeyState("Right")
+  {
+      MoveWindowToMonitor(3)
+  }
+  else
+  {
+    SendText "3"
+  }
+}
+
+Numpad5::
+{
+  if GetKeyState("Right")
+  {
+      MoveWindowToMonitor(4)
+  }
+  else
+  {
+    SendText "5"
+  }
+}
 
 
 ; ----- WIN + Numpad -----
