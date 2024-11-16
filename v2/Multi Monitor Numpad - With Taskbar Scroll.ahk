@@ -114,7 +114,7 @@ Numpad5::
 ; ----- Scroll taskbar -----
 ; https://stackoverflow.com/a/77044270
 
-#HotIf MouseIsOver("ahk_class Shell_TrayWnd") || WinActive("Task Switching")
+#HotIf MouseIsOver("ahk_class Shell_TrayWnd") || WinActive("Task Switching") || MouseIsOver("ahk_class Shell_SecondaryTrayWnd")
 
 counter := 0
 arrLength := Monitors.Length
