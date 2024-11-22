@@ -26,6 +26,10 @@ Many scripts could be combined into one - needs cleanup.
 
 # AHK v2
 
+### `Firefox Better Back Forward.ahk`
+
+- Adds CTRL + SHIFT + Z / X for Back / Foward navigation. Close together, on one side of the keyboard, only one hand needed.
+
 ### `G7V Pro HTPC.ahk`
 
 - My own personal keybind setup for the G7V Pro (non-Bluetooth / not G7BTS) air mouse remote. Used with my HTPC.
