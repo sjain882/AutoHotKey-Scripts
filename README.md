@@ -122,7 +122,11 @@ Many scripts could be combined into one - needs cleanup.
 
 # External
 
-[QuickSwitch](https://github.com/gepruts/QuickSwitch) - Uses opened file manager folders in File dialogs
+*(Scripts & resources)*
+
+[Explorer Dialog Path Selector](https://github.com/ThioJoe/ThioJoe-AHK-Scripts) - Uses opened file manager folders in File dialogs
+
+[QuickSwitch](https://github.com/gepruts/QuickSwitch) - Predecessor of above.
 
 [Change Laptop and External Monitor Brightness based on cursor position](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=108867&hilit=monitor) - Great overview & comparison of all the various APIs one can use for this
 
