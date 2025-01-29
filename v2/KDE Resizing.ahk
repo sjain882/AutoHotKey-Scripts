@@ -30,6 +30,31 @@ CoordMode "Mouse"
 
 g_DoubleAlt := false
 
+; MODIFIED - CTRL+ALT+LMouse to drag window to move it, but not automatically maximise again 
+^!LButton::
+{
+    ; Get the initial mouse position and window id, and
+    ; [MODIFIED - restore, not abort] if the window is maximized.
+    MouseGetPos &KDE_X1, &KDE_Y1, &KDE_id
+    if WinGetMinMax(KDE_id)
+		WinRestore KDE_id
+    ; Get the initial window position.
+    WinGetPos &KDE_WinX1, &KDE_WinY1, &width, &height, KDE_id ; &width and &height added by Cebolla
+    Loop
+    {
+        if !GetKeyState("LButton", "P") ; Break if button has been released.
+            break
+        MouseGetPos &KDE_X2, &KDE_Y2 ; Get the current mouse position.
+        KDE_X2 -= KDE_X1 ; Obtain an offset from the initial mouse position.
+        KDE_Y2 -= KDE_Y1
+        KDE_WinX2 := (KDE_WinX1 + KDE_X2) ; Apply this offset to the window position.
+        KDE_WinY2 := (KDE_WinY1 + KDE_Y2)
+        WinMove KDE_WinX2, KDE_WinY2, width, height, KDE_id ; Move the window to the new position.
+    }
+}
+
+
+
 !LButton::
 {
     global g_DoubleAlt
