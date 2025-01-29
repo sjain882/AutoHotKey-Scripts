@@ -3,9 +3,9 @@ Many scripts could be combined into one - needs cleanup.
 
 # AHK v1
 
-### `Always On Top Toggle & Rename Autoaccept.ahk`
+### `Always On Top Toggle.ahk`
 
-- Same as above, but only auto click "Yes" on the confirmation that appears when changing a file's extension in Explorer.
+- Toggle windows always on top with CTRL + Space.
 
 ### `CTRL W Minimises Discord and Telegram.ahk`
 
@@ -68,9 +68,9 @@ Many scripts could be combined into one - needs cleanup.
 
 # AHK v1
 
-### `Always On Top Toggle.ahk`
+### `Always On Top Toggle & Rename Autoaccept.ahk`
 
-- Toggle windows always on top with CTRL + Space.
+- Same as above, but only auto click "Yes" on the confirmation that appears when changing a file's extension in Explorer.
 
 ### `Always On Top Toggle & Error Autoaccept.ahk`
 
