@@ -11,6 +11,10 @@ Many scripts could be combined into one - needs cleanup.
 
 - Overrides CTRL + W to minimise window, not close it.
 
+### `Discord ALT F4 Fix.ahk`
+
+- Fixes ALT+F4 fully quitting discord. Instead, it closes to tray. [Source](https://old.reddit.com/r/discordapp/comments/s20kvq/an_autohotkey_script_to_make_altf4_minimize/)
+
 ### `SvenSpam/*`
 
 - Assorted spammer scripts for Sven-Coop.
