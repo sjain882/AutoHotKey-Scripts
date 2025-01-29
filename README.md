@@ -128,7 +128,15 @@ Many scripts could be combined into one - needs cleanup.
 
 [QuickSwitch](https://github.com/gepruts/QuickSwitch) - Predecessor of above.
 
+[Easy Window Dragging (KDE style)](https://www.autohotkey.com/docs/v2/scripts/index.htm#EasyWindowDrag_(KDE))
+
+[Minimize Window to Tray Menu](https://www.autohotkey.com/docs/v2/scripts/index.htm#MinimizeToTrayMenu))
+
+[Window Shading](https://www.autohotkey.com/docs/v2/scripts/index.htm#WindowShading) - Reduce/expand window to/from its titlebar (like a projector screen)
+
 [Change Laptop and External Monitor Brightness based on cursor position](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=108867&hilit=monitor) - Great overview & comparison of all the various APIs one can use for this
+
+[Changing MsgBox's Button Names](https://www.autohotkey.com/docs/v2/scripts/index.htm#MsgBoxButtonNames) & [Custom Increments for UpDown Controls](https://www.autohotkey.com/docs/v2/scripts/index.htm#Custom_Increments_for_UpDown_Controls) - great examples of manipulating standard windows controls
 
 [TaskbarInterface](https://autohotkey.com/boards/viewtopic.php?f=6&t=35348) - leverage taskbar windows features. [Source code](https://github.com/HelgeffegleH/taskbarInterface)
 
