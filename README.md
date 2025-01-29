@@ -40,7 +40,7 @@ Many scripts could be combined into one - needs cleanup.
 
 ### `Move GHelper.ahk`
 
-- Every second, check if G-Helper window exists. If so, move it to the secondary monitor, out the way.
+- Every second, check if G-Helper window is active. If so, move it to the secondary monitor, out the way.
 
 ### `Multi Monitor Numpad - With Taskbar Scroll.ahk`
 
