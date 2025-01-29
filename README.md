@@ -40,7 +40,7 @@ Many scripts could be combined into one - needs cleanup.
 
 ### `KDE Resizing.ahk`
 
-- Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=126656&hilit=monitor)
+- Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=126656&hilit=monitor). Modified from original script - see file
 
 ### `Move GHelper.ahk`
 

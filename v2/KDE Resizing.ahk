@@ -62,6 +62,8 @@ g_DoubleAlt := false
         KDE_WinY2 := (KDE_WinY1 + KDE_Y2)
         WinMove KDE_WinX2, KDE_WinY2, width, height, KDE_id ; Move the window to the new position.
     }
+	; [MODIFIED] Auto re-maximise when done
+    WinMaximize KDE_id
 }
 
 !RButton::
