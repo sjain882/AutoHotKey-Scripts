@@ -13,10 +13,10 @@
 ; press down until you click.
 ;
 ; The shortcuts:
-;  Alt + Left Button  : Drag to move a window.
+;  Alt + Left Button  : Drag to move a window.					[Modifed to auto un-maximise window beforehand]
 ;  Alt + Right Button : Drag to resize a window.
-;  Double-Alt + Left Button   : Minimize a window.
-;  Double-Alt + Right Button  : Maximize/Restore a window.
+;  Double-Alt + Left Button   : Maximize/Restore a window.		[Swapped from original script]
+;  Double-Alt + Right Button  : Minimize a window.				[Swapped from original script]
 ;  Double-Alt + Middle Button : Close a window.
 ;
 ; You can optionally release Alt after the first
@@ -32,21 +32,23 @@ g_DoubleAlt := false
 
 !LButton::
 {
-    global g_DoubleAlt  ; Declare it since this hotkey function must modify it.
+    global g_DoubleAlt
     if g_DoubleAlt
     {
         MouseGetPos ,, &KDE_id
-        ; This message is mostly equivalent to WinMinimize,
-        ; but it avoids a bug with PSPad.
-        PostMessage 0x0112, 0xf020,,, KDE_id
+        ; Toggle between maximized and restored state.
+        if WinGetMinMax(KDE_id)
+            WinRestore KDE_id
+        Else
+            WinMaximize KDE_id
         g_DoubleAlt := false
         return
     }
     ; Get the initial mouse position and window id, and
-    ; abort if the window is maximized.
+    ; [MODIFIED - restore, not abort] if the window is maximized.
     MouseGetPos &KDE_X1, &KDE_Y1, &KDE_id
     if WinGetMinMax(KDE_id)
-        return
+		WinRestore KDE_id
     ; Get the initial window position.
     WinGetPos &KDE_WinX1, &KDE_WinY1, &width, &height, KDE_id ; &width and &height added by Cebolla
     Loop
@@ -64,15 +66,13 @@ g_DoubleAlt := false
 
 !RButton::
 {
-    global g_DoubleAlt
+    global g_DoubleAlt  ; Declare it since this hotkey function must modify it.
     if g_DoubleAlt
     {
         MouseGetPos ,, &KDE_id
-        ; Toggle between maximized and restored state.
-        if WinGetMinMax(KDE_id)
-            WinRestore KDE_id
-        Else
-            WinMaximize KDE_id
+        ; This message is mostly equivalent to WinMinimize,
+        ; but it avoids a bug with PSPad.
+        PostMessage 0x0112, 0xf020,,, KDE_id
         g_DoubleAlt := false
         return
     }
