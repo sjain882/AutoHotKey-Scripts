@@ -124,6 +124,8 @@ Many scripts could be combined into one - needs cleanup.
 
 *(Scripts & resources)*
 
+[AHK Startup](https://www.autohotkey.com/boards/viewtopic.php?t=120981) - Essential! Consolidates multiple scripts into 1 tray icon, for convenient autostart
+
 [Explorer Dialog Path Selector](https://github.com/ThioJoe/ThioJoe-AHK-Scripts) - Uses opened file manager folders in File dialogs
 
 [QuickSwitch](https://github.com/gepruts/QuickSwitch) - Predecessor of above.
