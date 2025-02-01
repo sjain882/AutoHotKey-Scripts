@@ -11,6 +11,10 @@ Many scripts could be combined into one - needs cleanup.
 
 - Overrides CTRL + W to minimise window, not close it.
 
+### `No ALT F4 BeamNG.ahk`
+
+- When using SuperF4 CTRL+ALT+F4, BeamNG often (annoyingly) recieves ALT+F4 if it's under the last active window. This disables that.
+
 ### `Discord ALT F4 Fix.ahk`
 
 - Fixes ALT+F4 fully quitting discord. Instead, it closes to tray. [Source](https://old.reddit.com/r/discordapp/comments/s20kvq/an_autohotkey_script_to_make_altf4_minimize/)
@@ -19,16 +23,18 @@ Many scripts could be combined into one - needs cleanup.
 
 - Assorted spammer scripts for Sven-Coop.
 
-### `UnCapsLock for CS.ahk`
-
-- Prevents use of CapsLock as a Sneak/Walk button from interfering with text chat by automatically turning off CapsLock when key is released, in CS 1.6 / CSS / CS2.
-
-- Useful for using CapsLock sneak & Shift duck, instead of Shift sneak and Ctrl duck, as those keys are closer to WASD - more ergonomic.
-
 
 ***
 
 # AHK v2
+
+### `AHK Startup.ahk`
+
+- Combine all AHK scripts into one tray icon. [Original source](https://www.autohotkey.com/boards/viewtopic.php?t=120981)
+
+### `AltDragStandalone-Modded.ahk`
+
+- Advanced window position & size controller script. Replaces "Easy Window Dragging KDE style". By Cobracrystal - [original source here](https://github.com/Cobracrystal/ahk). Modified from original script - see file
 
 ### `Firefox Better Back Forward.ahk`
 
@@ -37,10 +43,6 @@ Many scripts could be combined into one - needs cleanup.
 ### `G7V Pro HTPC.ahk`
 
 - My own personal keybind setup for the G7V Pro (non-Bluetooth / not G7BTS) air mouse remote. Used with my HTPC.
-
-### `KDE Resizing.ahk`
-
-- Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=126656&hilit=monitor). Modified from original script - see file
 
 ### `Move GHelper.ahk`
 
@@ -59,6 +61,12 @@ Many scripts could be combined into one - needs cleanup.
 - Credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to archived script.
 
 - Taskbar scrolling added by me, based on https://stackoverflow.com/a/77044270
+
+### `UnCapsLock for CS.ahk`
+
+- Prevents use of CapsLock as a Sneak/Walk button from interfering with text chat by automatically turning off CapsLock when key is released, in CS 1.6 / CSS / CS2.
+
+- Useful for using CapsLock sneak & Shift duck, instead of Shift sneak and Ctrl duck, as those keys are closer to WASD - more ergonomic.
 
 
 ***
@@ -109,6 +117,10 @@ Many scripts could be combined into one - needs cleanup.
 ***
 
 # AHK v2
+
+### `KDE Resizing.ahk`
+
+- Easy Window Dragging KDE style. By Cebolla - [original source here](https://www.autohotkey.com/boards/viewtopic.php?f=83&t=126656&hilit=monitor). Modified from original script - see file
 
 ### `Multi Monitor Numpad.ahk`
 
