@@ -11,10 +11,6 @@ Many scripts could be combined into one - needs cleanup.
 
 - Overrides CTRL + W to minimise window, not close it.
 
-### `No ALT F4 BeamNG.ahk`
-
-- When using SuperF4 CTRL+ALT+F4, BeamNG often (annoyingly) recieves ALT+F4 if it's under the last active window. This disables that.
-
 ### `Discord ALT F4 Fix.ahk`
 
 - Fixes ALT+F4 fully quitting discord. Instead, it closes to tray. [Source](https://old.reddit.com/r/discordapp/comments/s20kvq/an_autohotkey_script_to_make_altf4_minimize/)
@@ -91,6 +87,12 @@ Many scripts could be combined into one - needs cleanup.
 - Best used with `Multi Monitor Numpad - With Taskbar Scroll.ahk`
 
 - [Source](https://www.autohotkey.com/board/topic/5112-remove-window-form-taskbar/?p=31692) ([archive](https://archive.ph/wip/xRBZC))
+
+### `No ALT F4 BeamNG.ahk`
+
+- When using SuperF4 CTRL+ALT+F4, BeamNG often (annoyingly) recieves ALT+F4 if it's under the last active window. This disables that.
+
+- Archived because it doesn't work. The ALT+F4 still gets sent to BeamNG anyway. But if you manually ALT+F4 when already in BeamNG, that now doesn't work. Worst of both worlds.
 
 ### `ThrowWindow.ahk`
 

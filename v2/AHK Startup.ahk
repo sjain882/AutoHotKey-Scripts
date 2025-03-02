@@ -41,7 +41,6 @@ Files := [	; Additional Startup Files and Folders Can Be Added Between the ( Con
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\v2\UnCapsLock for CS.ahk"								"/v2"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\Always On Top Toggle.ahk"  							"/v1"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\Discord ALT F4 Fix.ahk"  								"/v1"
-	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\No ALT F4 BeamNG.ahk"									"/v1"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\CTRL W Minimises Discord and Telegram.ahk"				"/v1"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\SvenSpam.ahk"											"/v1 /noload"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\ThrowWindow.ahk"										"/v1 /noload"
