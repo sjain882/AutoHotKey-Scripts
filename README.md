@@ -32,6 +32,10 @@ Many scripts could be combined into one - needs cleanup.
 
 - Advanced window position & size controller script. Replaces "Easy Window Dragging KDE style". By Cobracrystal - [original source here](https://github.com/Cobracrystal/ahk). Modified from original script - see file
 
+### `Dolphin Reminder.ahk`
+
+- When exiting Dolphin games, show a message box reminding user to remove Wii Remote batteries (due to idle drain) & switch off Wii Sensor Bar (due to burnout potential)
+
 ### `Firefox Better Back Forward.ahk`
 
 - Adds CTRL + SHIFT + Z / X for Back / Foward navigation. Close together, on one side of the keyboard, only one hand needed.
@@ -57,6 +61,10 @@ Many scripts could be combined into one - needs cleanup.
 - Credits to `stefano` who wrote the script entirely in the AHK Discord [here](https://discord.com/channels/115993023636176902/1296424288265572405/1296439733047791638), as a correction to archived script.
 
 - Taskbar scrolling added by me, based on https://stackoverflow.com/a/77044270
+
+### `K400+_FixFunctionKeys.ahk`
+
+- Disable FN-lock on K400+ without needing their terrible bloatware
 
 ### `UnCapsLock for CS.ahk`
 
