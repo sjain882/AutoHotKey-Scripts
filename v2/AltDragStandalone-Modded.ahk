@@ -118,7 +118,8 @@ class AltDrag {
 		}
 
 		; MODIFIED - Auto restore when resizing maximised windows
-		if autoRestore
+		; ALWAYS RESTORES IF MAXIMISED
+		; if autoRestore
 			if WinGetMinMax(wHandle)
 				WinRestore wHandle
 
