@@ -72,6 +72,14 @@ Many scripts could be combined into one - needs cleanup.
 
 - Useful for using CapsLock sneak & Shift duck, instead of Shift sneak and Ctrl duck, as those keys are closer to WASD - more ergonomic.
 
+### `SonsOfTheForest.ahk`
+
+- Same as above with CapsLock
+
+- Adds toggle spamming X on F4, to quickly put items into holder.
+
+- Combined with X-Button Mouse Control to spam jump on Mouse4 to double jump, and Mouse5 to spam E to quickly pick up items from holder.
+
 
 ***
 
