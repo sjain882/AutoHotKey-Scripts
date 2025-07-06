@@ -8,7 +8,7 @@ global isSpamming := false
 
 
 #HotIf WinActive("ahk_exe SonsOfTheForest.exe")
-F4::
+F3::
 {
     global isSpamming := !isSpamming
     if isSpamming {
