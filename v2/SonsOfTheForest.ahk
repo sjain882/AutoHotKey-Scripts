@@ -8,14 +8,13 @@ global isSpamming := false
 
 
 #HotIf WinActive("ahk_exe SonsOfTheForest.exe")
-F3::
+*F3::
 {
-    global isSpamming := !isSpamming
-    if isSpamming {
-        SetTimer(SpamX, 50)
-    } else {
-        SetTimer(SpamX, 0)
-    }
+    SetTimer(SpamX, 50)
+}
+*F3 Up::
+{
+    SetTimer(SpamX, 0)
 }
 #HotIf  ; Resets context for other hotkeys
 
