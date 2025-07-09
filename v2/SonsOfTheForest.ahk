@@ -16,9 +16,23 @@ global isSpamming := false
 {
     SetTimer(SpamX, 0)
 }
+
+*F4::
+{
+    SetTimer(SpamClick, 50)
+}
+*F4 Up::
+{
+    SetTimer(SpamClick, 0)
+}
 #HotIf  ; Resets context for other hotkeys
 
 SpamX()
 {
     Send("x")
+}
+
+SpamClick()
+{
+    Click("Left")
 }
