@@ -1,6 +1,8 @@
 Scripts created by me, unless otherwise specified.
 Many scripts could be combined into one - needs cleanup.
 
+NOTE: [X-Button Mouse Control](https://www.highrez.co.uk/downloads/xmousebuttoncontrol.htm) profiles included are to be used in conjunction with AHK scripts (as per the filenames).
+
 # AHK v1
 
 ### `Always On Top Toggle.ahk`

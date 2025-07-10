@@ -18,6 +18,8 @@ Ins::^u
 !Up::^PgUp
 !Down::^PgDn
 
-; Combined with X-Button Mouse Control
-; Mouse5: up a page
-; Mouse4: down a page
+; Combined with X-Mouse Button Control
+; Mouse5: up a page 		{CTRL}{PGUP}
+; Mouse4: down a page		{CTRL}{PGDN}
+; Mouse3: Bold Highlight	{CTRL}b{CTRL}{ALT}h
+; xmbc profile included in git repo
