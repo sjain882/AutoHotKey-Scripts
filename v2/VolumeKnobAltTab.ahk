@@ -1,7 +1,8 @@
 #Requires AutoHotkey v2.0+
 
 ; === Configurable Settings ===
-rateLimitMs := 75  ; Minimum time between volume inputs (in milliseconds)
+rateLimitMs := 75        ; Minimum time between volume inputs (in milliseconds)
+autoReleaseDelay := 500  ; Time to hold Alt before auto-release (in milliseconds)
 
 ; === Global State ===
 global altHeld := false
@@ -14,7 +15,7 @@ global firstAltTab := true
 *Volume_Mute::handleMuteKey()
 
 handleVolumeKey(direction) {
-    global altHeld, altTimer, lastVolumeInput, rateLimitMs, firstAltTab
+    global altHeld, altTimer, lastVolumeInput, rateLimitMs, firstAltTab, autoReleaseDelay
 
     ; Rate limit
     if (A_TickCount - lastVolumeInput < rateLimitMs) {
@@ -45,15 +46,15 @@ handleVolumeKey(direction) {
         Send("+{Tab}")
     }
 
-    ; Keep Alt held for 2 seconds
-    SetTimer(releaseAlt, 2000)
+    ; Keep Alt held for specified duration
+    SetTimer(releaseAlt, autoReleaseDelay)
     altTimer := A_TickCount
 }
 
 releaseAlt() {
-    global altHeld, altTimer, firstAltTab
+    global altHeld, altTimer, firstAltTab, autoReleaseDelay
 
-    if (A_TickCount - altTimer >= 2000) {
+    if (A_TickCount - altTimer >= autoReleaseDelay) {
         Send("{Alt up}")
         altHeld := false
         firstAltTab := true
@@ -70,13 +71,13 @@ handleMuteKey() {
         return
     }
 
-    ; If rate-limited, skip
+    ; Rate limit mute key
     if (A_TickCount - lastVolumeInput < rateLimitMs) {
         return
     }
     lastVolumeInput := A_TickCount
 
-    ; If Alt is held, cancel the Alt+Tab state
+    ; Cancel Alt+Tab if it's active
     if altHeld {
         SetTimer(releaseAlt, 0)
         Send("{Alt up}")
