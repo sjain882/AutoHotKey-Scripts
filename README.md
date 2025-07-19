@@ -87,9 +87,9 @@ NOTE: [X-Button Mouse Control](https://www.highrez.co.uk/downloads/xmousebuttonc
 
 - Set Volume Knob on AULA F75 keyboard (or any other) to be an ALT+TAB system with specific behaviours:
 
-- For the first turn of knob (clockwise/anticlockwise), just show the ALT+TAB menu but don't change app. It will stay visible until you click/press down on knob again (mute button). This is achieved by e.g, instantly sending ALT+SHIFT+TAB after ALT+TAB.
+- For the first turn of knob (clockwise/anticlockwise), just show the ALT+TAB menu but don't change app. It will stay visible until you click/press down on knob again (mute button). This is achieved by instantly sending ALT+SHIFT+TAB after ALT+TAB to show the UI.
 
-- After you finished turning knob to select app, alt tab menu will stay visible for 2 seconds before it commits the app switch (aka, releases ALT.). This can be bypasses before the 2 seconds has elapsed by clicking knob
+- After you finished turning knob to select app, alt tab menu will stay visible for 2 seconds before it commits the app switch (aka, releases ALT.). This can be bypassed before the 2 seconds has elapsed by clicking the knob.
 
 - Can still mute/unmute volume by clicking knob when ALT+TAB menu is NOT visible.
 
