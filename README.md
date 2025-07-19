@@ -81,6 +81,19 @@ NOTE: [X-Button Mouse Control](https://www.highrez.co.uk/downloads/xmousebuttonc
 - Adds toggle spamming X on F4, to quickly put items into holder.
 
 - Combined with X-Button Mouse Control to spam jump on Mouse4 to double jump, and Mouse5 to spam E to quickly pick up items from holder.
+- Useful for using CapsLock sneak & Shift duck, instead of Shift sneak and Ctrl duck, as those keys are closer to WASD - more ergonomic.
+
+### `VolumeKnobAltTab.ahk`
+
+- Set Volume Knob on AULA F75 keyboard (or any other) to be an ALT+TAB system with specific behaviours:
+
+- For the first turn of knob (clockwise/anticlockwise), just show the ALT+TAB menu but don't change app. It will stay visible until you click/press down on knob again (mute button). This is achieved by e.g, instantly sending ALT+SHIFT+TAB after ALT+TAB.
+
+- After you finished turning knob to select app, alt tab menu will stay visible for 2 seconds before it commits the app switch (aka, releases ALT.). This can be bypasses before the 2 seconds has elapsed by clicking knob
+
+- Can still mute/unmute volume by clicking knob when ALT+TAB menu is NOT visible.
+
+- Ratelimit knob turns a bit.
 
 
 ***
