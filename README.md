@@ -36,7 +36,7 @@ NOTE: [X-Button Mouse Control](https://www.highrez.co.uk/downloads/xmousebuttonc
 
 ### `AltBacktickBackslash.ahk`
 
-- ALT + Backtick key (`) types a backslash (\) - useful for non ISO keyboards where key is missing, like AULA F75
+- ALT + Backtick key (`) types a backslash (\\) - useful for non ISO keyboards where key is missing, like AULA F75
 
 ### `Dolphin Reminder.ahk`
 
