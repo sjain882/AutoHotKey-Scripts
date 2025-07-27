@@ -1,4 +1,5 @@
 #Requires AutoHotkey v2.0+
+#SingleInstance Force
 
 ; === Configurable Settings ===
 rateLimitMs := 75         ; Minimum time between volume inputs (in milliseconds)
