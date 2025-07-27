@@ -22,7 +22,7 @@ handleVolumeKey(direction) {
     if GetKeyState("Ctrl", "P") {
         if direction = "up" {
             Send("{Volume_Up}")
-        } else if direction = "down") {
+        } else if direction = "down" {
             Send("{Volume_Down}")
         }
         return
