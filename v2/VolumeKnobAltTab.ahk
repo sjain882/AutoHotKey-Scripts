@@ -1,8 +1,8 @@
 #Requires AutoHotkey v2.0+
 
 ; === Configurable Settings ===
-rateLimitMs := 75        ; Minimum time between volume inputs (in milliseconds)
-autoReleaseDelay := 500  ; Time to hold Alt before auto-release (in milliseconds)
+rateLimitMs := 75         ; Minimum time between volume inputs (in milliseconds)
+autoReleaseDelay := 1000  ; Time to hold Alt before auto-release (in milliseconds)
 
 ; === Global State ===
 global altHeld := false
@@ -17,20 +17,34 @@ global firstAltTab := true
 handleVolumeKey(direction) {
     global altHeld, altTimer, lastVolumeInput, rateLimitMs, firstAltTab, autoReleaseDelay
 
+    ; If Ctrl is held, allow normal volume adjustment
+    if GetKeyState("Ctrl", "P") {
+        if direction = "up" {
+            Send("{Volume_Up}")
+        } else if direction = "down") {
+            Send("{Volume_Down}")
+        }
+        return
+    }
+
     ; Rate limit
     if (A_TickCount - lastVolumeInput < rateLimitMs) {
         return
     }
     lastVolumeInput := A_TickCount
 
-    ; First time Alt is being held — trigger neutral Alt+Tab display
+    ; First Alt+Tab activation
     if !altHeld {
         Send("{Alt down}")
         altHeld := true
         firstAltTab := true
     }
 
-    ; If first tabbing action — show Alt+Tab UI without switching
+    ; Refresh timer on any volume input while Alt is held
+    SetTimer(releaseAlt, autoReleaseDelay)
+    altTimer := A_TickCount
+
+    ; On first knob turn, show Alt+Tab UI without switching
     if firstAltTab {
         Send("{Tab}")
         Sleep(10)
@@ -39,16 +53,12 @@ handleVolumeKey(direction) {
         return
     }
 
-    ; Navigate forward or backward in Alt+Tab
+    ; Navigate forward/backward
     if (direction = "up") {
         Send("{Tab}")
     } else if (direction = "down") {
         Send("+{Tab}")
     }
-
-    ; Keep Alt held for specified duration
-    SetTimer(releaseAlt, autoReleaseDelay)
-    altTimer := A_TickCount
 }
 
 releaseAlt() {
@@ -65,23 +75,27 @@ releaseAlt() {
 handleMuteKey() {
     global altHeld, lastVolumeInput, rateLimitMs, firstAltTab
 
-    ; If Alt+Tab menu is NOT open, let system mute/unmute normally
-    if !WinActive("ahk_class MultitaskingViewFrame") && !WinActive("ahk_class TaskSwitcherWnd") {
+    ; If Ctrl is held, allow normal mute behavior
+    if GetKeyState("Ctrl", "P") {
         Send("{Volume_Mute}")
         return
     }
 
-    ; Rate limit mute key
+    ; Rate limit
     if (A_TickCount - lastVolumeInput < rateLimitMs) {
         return
     }
     lastVolumeInput := A_TickCount
 
-    ; Cancel Alt+Tab if it's active
+    ; If Alt+Tab is active (held), cancel it — no mute
     if altHeld {
         SetTimer(releaseAlt, 0)
         Send("{Alt up}")
         altHeld := false
         firstAltTab := true
+        return
     }
+
+    ; Otherwise, normal mute/unmute
+    Send("{Volume_Mute}")
 }
