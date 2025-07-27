@@ -34,6 +34,10 @@ NOTE: [X-Button Mouse Control](https://www.highrez.co.uk/downloads/xmousebuttonc
 
 - Advanced window position & size controller script. Replaces "Easy Window Dragging KDE style". By Cobracrystal - [original source here](https://github.com/Cobracrystal/ahk). Modified from original script - see file
 
+### `AltBacktickBackslash.ahk`
+
+- ALT + Backtick key (`) types a backslash (\) - useful for non ISO keyboards where key is missing, like AULA F75
+
 ### `Dolphin Reminder.ahk`
 
 - When exiting Dolphin games, show a message box reminding user to remove Wii Remote batteries (due to idle drain) & switch off Wii Sensor Bar (due to burnout potential)

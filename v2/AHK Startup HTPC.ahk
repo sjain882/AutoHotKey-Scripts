@@ -35,6 +35,8 @@ DetectHiddenWindows true ; scripts base window is generally hidden
 Files := [	; Additional Startup Files and Folders Can Be Added Between the ( Continuations  ) Below
 	(Join,
 	"C:\Users\User\Documents\Autohotkey\Autohotkey-Scripts\v2\AltDragStandalone-Modded.ahk"						"/v2"
+	"C:\Users\User\Documents\Autohotkey\Autohotkey-Scripts\v2\OneNote T14s.ahk"						"/v2"
+	"C:\Users\User\Documents\Autohotkey\AutoHotKey-Scripts\v2\AltBacktickBackslash.ahk"						"/v2"
 	"C:\Users\User\Documents\Autohotkey\Autohotkey-Scripts\v2\VolumeKnobAltTab.ahk"						"/v2"
 	"C:\Users\User\Documents\Autohotkey\Autohotkey-Scripts\v2\Firefox Better Back Forward.ahk"					"/v2"
 	"C:\Users\User\Documents\Autohotkey\Autohotkey-Scripts\v2\UnCapsLock for CS.ahk"								"/v2"
