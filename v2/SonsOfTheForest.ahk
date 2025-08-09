@@ -1,4 +1,5 @@
 #Requires Autohotkey v2
+#SingleInstance Force
 
 global isSpamming := false
 
