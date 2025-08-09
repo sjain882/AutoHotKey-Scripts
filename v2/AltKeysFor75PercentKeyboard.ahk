@@ -5,4 +5,5 @@
 !`::Send("\")
 
 ; Remap Alt + 3 to Hash
-!3::Send("{Raw}#")
+#HotIf !(WinActive("ahk_exe cs2.exe") || WinActive("ahk_exe hl.exe") || WinActive("ahk_exe hl2.exe"))
+	!3::Send("{Raw}#")
