@@ -35,6 +35,8 @@ DetectHiddenWindows true ; scripts base window is generally hidden
 Files := [	; Additional Startup Files and Folders Can Be Added Between the ( Continuations  ) Below
 	(Join,
 	"C:\System Files\Autohotkey Scripts\AltDragStandalone-Modded SingleMonitor.ahk"					"/v2"
+	"C:\System Files\Autohotkey Scripts\EmojiMartOnWinSemicolon.ahk"								"/v2"
+	"C:\System Files\Autohotkey Scripts\Firefox Better Back Forward.ahk"							"/v2"
 	"C:\System Files\Autohotkey Scripts\OneNote T14s.ahk"											"/v2"
 	"C:\System Files\Autohotkey Scripts\CTRL W Minimises Discord and Telegram.ahk"					"/v2"
 	"C:\System Files\Autohotkey Scripts\Edge Shortcuts.ahk"											"/v2"	
