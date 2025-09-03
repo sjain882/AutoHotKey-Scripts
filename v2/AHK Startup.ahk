@@ -37,6 +37,7 @@ Files := [	; Additional Startup Files and Folders Can Be Added Between the ( Con
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\v2\Multi Monitor Numpad - With Taskbar Scroll.ahk"		"/v2"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\v2\AltDragStandalone-Modded.ahk"						"/v2"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\v2\EmojiMartOnWinSemicolon.ahk"						"/v2"
+	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\v2\Edge Shortcuts.ahk"									"/v2"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\v2\Firefox Better Back Forward.ahk"					"/v2"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\v2\UnCapsLock for CS.ahk"								"/v2"
 	"C:\Users\Redacted\Documents\Applications\AutoHotKey\Sources\v2\SonsOfTheForest.ahk"								"/v2"
