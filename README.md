@@ -38,6 +38,8 @@ NOTE: [X-Button Mouse Control](https://www.highrez.co.uk/downloads/xmousebuttonc
 
 - ALT + Backtick key (`) types a backslash (\\) - useful for non ISO keyboards where key is missing, like AULA F75
 - ALT + 1 key types a bar (|) 
+- ALT + 3 key types a hash (#)
+- Exe-dependant so it doesn't interfere with weapon switching in games
 
 ### `Dolphin Reminder.ahk`
 
