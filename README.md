@@ -34,13 +34,24 @@ NOTE: [X-Button Mouse Control](https://www.highrez.co.uk/downloads/xmousebuttonc
 
 - Advanced window position & size controller script. Replaces "Easy Window Dragging KDE style". By Cobracrystal - [original source here](https://github.com/Cobracrystal/ahk). Modified from original script - see file
 
-### `AltBacktickBackslash.ahk`
+### `AltKeysFor75PercentKeyboard.ahk`
 
 - ALT + Backtick key (`) types a backslash (\\) - useful for non ISO keyboards where key is missing, like AULA F75
+- ALT + 1 key types a bar (|) 
 
 ### `Dolphin Reminder.ahk`
 
 - When exiting Dolphin games, show a message box reminding user to remove Wii Remote batteries (due to idle drain) & switch off Wii Sensor Bar (due to burnout potential)
+
+### `Edge Shortcuts.ahk`
+
+- F1 -> ALT + SHIFT + I for Image Max URL (as backtick doesn't work in Edge as a shortcut key)
+- Alt + Up/Down switches tabs (good for vertical tabs)
+- Alt + Shift + Up/Down moves current tab up/down (good for vertical tabs) 
+
+### `EmojiMartOnWinSemicolon.ahk`
+
+- Starts emojimart and focuses search box so you can type immediately. Includes relevant sleep calls to ensure it really works.
 
 ### `Firefox Better Back Forward.ahk`
 
