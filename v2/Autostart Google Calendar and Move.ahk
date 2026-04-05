@@ -26,4 +26,3 @@ if !WinExist(winTitle) {
 ; 2. Execute Move
 ; Using the Screen dimensions ensures the Client area lands where you expect
 WinMove(targetX, targetY, targetW, targetH, winTitle)
-WinActivate(winTitle)
