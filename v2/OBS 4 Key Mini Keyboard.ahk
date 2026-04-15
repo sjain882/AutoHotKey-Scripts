@@ -34,10 +34,10 @@ SetKeyDelay(50, 50)
 ; ----------------------------------------------------------------
 
 #HotIf CurrentMode == 1 ; --- MODE 1: NAVIGATION / OBS ---
-    F21::SendEvent "^{Delete}"
-    F22::SendEvent "^{PgUp}"
-    F23::SendEvent "^{End}"
-    F24::SendEvent "^{PgDn}"
+    F24::SendEvent "^{End}"
+    F23::SendEvent "^{PgUp}"
+    F22::SendEvent "^{Delete}"
+    F21::SendEvent "^{PgDn}"
 
 #HotIf CurrentMode == 2 ; --- MODE 2: MEDIA ---
     F21::SendEvent "{Media_Prev}"
