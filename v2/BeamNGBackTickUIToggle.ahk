@@ -3,9 +3,19 @@
 
 #HotIf WinActive("ahk_exe BeamNG.Drive.x64.exe")
 
-; Send Ctrl+1 with a held duration so the game engine registers it reliable
+; Set key press duration to 75ms for reliable game engine polling
+SetKeyDelay 10, 75
+
+; Backtick -> Ctrl + 1
 SC029::{
-    Send "{Ctrl down}{1 down}"
-    Sleep 50
-    Send "{1 up}{Ctrl up}"
+    SendEvent "{Ctrl down}{1 down}"
+    Sleep 75
+    SendEvent "{1 up}{Ctrl up}"
+}
+
+; Ctrl + Backtick -> Ctrl + 2
+^SC029::{
+    SendEvent "{Ctrl down}{2 down}"
+    Sleep 75
+    SendEvent "{2 up}{Ctrl up}"
 }
