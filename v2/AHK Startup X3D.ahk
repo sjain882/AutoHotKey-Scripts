@@ -35,6 +35,7 @@ DetectHiddenWindows true ; scripts base window is generally hidden
 Files := [	; Additional Startup Files and Folders Can Be Added Between the ( Continuations  ) Below
 	(Join,
 	"C:\Users\sjain\autohotkey-scripts\v2\OBS 4 Key Mini Keyboard.ahk"						"/v2"
+	"C:\Users\sjain\autohotkey-scripts\v2\VolumeKnobForDisplayBrightnessAndInputs.ahk"		"/v2"
 	"C:\Users\sjain\autohotkey-scripts\v2\BeamNGBackTickUIToggle.ahk"						"/v2"
 	"C:\Users\sjain\autohotkey-scripts\v2\Autostart Google Calendar and Move.ahk"			"/v2 /noload"
 	"C:\Users\sjain\autohotkey-scripts\v2\Multi Monitor Numpad - With Taskbar Scroll.ahk"	"/v2 /noload"
